@@ -478,6 +478,87 @@
           </div>
         </article>
 
+        <!-- Content Performance Data Model -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="bar-chart-2" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/content-performance-data-model" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Content performance data model</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Multi-layered dbt project (staging → intermediate → mart) unifying content catalog, daily engagement events, and itemised cost data into two consumption tables: a title-grain performance wide table and a genre × region ROI rollup. DuckDB for local development, BigQuery for production. Custom macros, data tests, and composite engagement scoring.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">dbt</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">DuckDB</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">SQL</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Data Modeling</span>
+          </div>
+        </article>
+
+        <!-- Content Launch Prediction Pipeline -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="cpu" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/content-launch-prediction-pipeline" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Distributed pipeline for predicting launch outcomes</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            End-to-end ML pipeline on Spark + Airflow + Docker: PySpark feature engineering job aggregates 90-day rolling engagement history, XGBoost classifier predicts high / medium / low completion rates, Airflow DAG orchestrates daily scoring with weekly retraining via BranchOperator. Results loaded back to BigQuery for strategy and FP&A dashboards.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">PySpark</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Airflow</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">XGBoost</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Docker</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+          </div>
+        </article>
+
+        <!-- Content Data Abstraction Layer -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="layers" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/content-data-abstraction-layer" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Data abstraction layer for cross-team collaboration</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Python package (<code class="mono">content-dal</code>) providing a uniform data access API over BigQuery, GCS, and local Parquet backends. FP&A, strategy, and data science teams share one definition of completion rate, cost-per-view, and payback efficiency — backed by whichever storage layer they have access to. Swap backends via dependency injection with no metric code changes.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Abstract Classes</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">GCS</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">pytest</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -554,6 +635,54 @@
             <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
             <span class="badge px-2 py-0.5 rounded text-xs">ML</span>
             <span class="badge px-2 py-0.5 rounded text-xs">Finance</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/content-performance-data-model" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">content-performance-data-model</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            dbt project with staging → intermediate → mart layers, custom macros, and data tests. DuckDB dev, BigQuery prod.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">DuckDB</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/content-launch-prediction-pipeline" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">content-launch-prediction-pipeline</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Distributed ML pipeline: PySpark features → XGBoost classifier → Airflow orchestration with weekly retraining branch.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">PySpark</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Airflow</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Docker</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/content-data-abstraction-layer" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">content-data-abstraction-layer</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Python package unifying content metrics across BigQuery, GCS, and Parquet backends via dependency injection.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">pytest</span>
           </div>
         </a>
 
