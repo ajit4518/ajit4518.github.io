@@ -559,6 +559,168 @@
           </div>
         </article>
 
+        <!-- Real-time CDC Pipeline -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="activity" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/realtime-cdc-pipeline" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Real-time CDC pipeline: Postgres → Kafka → Iceberg</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            End-to-end change data capture pipeline using Debezium to capture Postgres WAL events, Kafka + Schema Registry for schema-governed delivery, and Spark Structured Streaming to upsert into Apache Iceberg via <code class="mono">MERGE INTO</code>. Includes idempotent foreachBatch handlers, Z-order compaction, snapshot expiry, and a full local Docker Compose stack with MinIO (S3-compatible).
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Debezium</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Kafka</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Apache Iceberg</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">PySpark</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Docker</span>
+          </div>
+        </article>
+
+        <!-- Shopify → BigQuery Analytics -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="shopping-cart" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/shopify-bigquery-analytics" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Shopify e-commerce analytics platform on BigQuery</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Full analytics stack for Shopify merchants: watermark-based incremental loader with leaky-bucket rate-limit detection, dbt staging dedup and mart models for daily sales and customer LTV segments (champion / loyal / at-risk / new), and a Cloud Function that validates Shopify webhook signatures (HMAC-SHA256) and streams events directly to BigQuery.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Shopify API</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">dbt</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Cloud Functions</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+          </div>
+        </article>
+
+        <!-- Data Observability Framework -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="eye" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/data-observability-framework" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Data observability framework with Slack alerting</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            YAML-configured monitoring framework for BigQuery tables: volume anomaly detection via Z-score over a 28-day rolling window, freshness SLA checking with configurable warn/critical thresholds, and per-column null-rate drift detection — all in a single BigQuery scan. Color-coded Slack alerts (green / orange / red) fire only on failures.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Z-Score Anomaly</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Slack Webhooks</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">DataOps</span>
+          </div>
+        </article>
+
+        <!-- Multi-source ETL Framework -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="shuffle" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/multi-source-etl-framework" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">YAML-driven multi-source ETL framework</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Extensible ETL framework using an abstract connector pattern — REST APIs (bearer/api_key/basic auth with cursor pagination), Google Sheets (Sheets API v4 with service account), and Airtable plug in via a common <code class="mono">BaseConnector</code> interface. BigQuery loader supports append / replace / upsert (MERGE INTO staging table) modes. New pipelines require only YAML config.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">REST APIs</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Google Sheets</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Abstract Classes</span>
+          </div>
+        </article>
+
+        <!-- Snowflake Cost Optimizer -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="dollar-sign" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/snowflake-cost-optimizer" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Snowflake cost optimization toolkit</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Toolkit for identifying and cutting Snowflake credit spend: query profiler surfaces top consumers from <code class="mono">QUERY_HISTORY</code> with per-query recommendations (high partition scan %, remote storage spill), warehouse analyzer produces right-sizing actions (downsize / upsize / multi-cluster) from metering and queue data, clustering key advisor mines predicate patterns, and a Streamlit dashboard visualizes daily burn.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Snowflake</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Streamlit</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Cost Ops</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Clustering</span>
+          </div>
+        </article>
+
+        <!-- Text-to-SQL Assistant -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="message-square" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/text-to-sql-assistant" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Natural-language to SQL assistant with RAG + guardrails</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Production-grade text-to-SQL service: TF-IDF schema retriever selects the most relevant tables for a question, LLM (claude-haiku) generates SQL with the schema in context, a static validator blocks all DDL/DML (DROP/DELETE/TRUNCATE), and a FastAPI app exposes <code class="mono">/query</code>, <code class="mono">/explain</code>, and <code class="mono">/tables</code> endpoints. Backends swappable between DuckDB (dev) and BigQuery (prod).
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">FastAPI</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">LLM</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">RAG</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">DuckDB</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -683,6 +845,102 @@
             <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
             <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
             <span class="badge px-2 py-0.5 rounded text-xs">pytest</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/realtime-cdc-pipeline" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">realtime-cdc-pipeline</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Debezium + Kafka + Spark Structured Streaming → Apache Iceberg with MERGE INTO upserts and Z-order compaction.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Debezium</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Kafka</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Iceberg</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/shopify-bigquery-analytics" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">shopify-bigquery-analytics</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Shopify → BigQuery incremental pipeline with dbt LTV models and Cloud Function webhook ingestion.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Shopify API</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/data-observability-framework" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">data-observability-framework</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            YAML-driven BigQuery monitors for volume (Z-score), freshness SLA, and null-rate drift with Slack alerting.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">DataOps</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/multi-source-etl-framework" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">multi-source-etl-framework</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            YAML-driven ETL with pluggable REST, Google Sheets, and Airtable connectors loading to BigQuery with upsert support.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">ETL</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/snowflake-cost-optimizer" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">snowflake-cost-optimizer</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Query profiler, warehouse right-sizing advisor, clustering key recommender, and Streamlit cost dashboard for Snowflake.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Snowflake</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Streamlit</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Cost Ops</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/text-to-sql-assistant" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">text-to-sql-assistant</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            FastAPI service: TF-IDF schema RAG → LLM SQL generation → safety guardrails → DuckDB/BigQuery execution.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">FastAPI</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">LLM</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">RAG</span>
           </div>
         </a>
 
