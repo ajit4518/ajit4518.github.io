@@ -1,160 +1,649 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | 
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ajit Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajit Zod — Data Engineer</title>
+  <meta name="description" content="Ajit Zod — Data Engineer specializing in Databricks, AWS, and end-to-end data products. 3+ years shipping production pipelines, warehouse infrastructure, and AI-driven analytics." />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Ajit Portfolio<br />
-						</h1>
-						<p>Data Analyst well versed in SQL, Python, Tableau and Power BI <a href="https://www.linkedin.com/in/ajit-zod-0813101b6/">@ajitzod</a> 
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Google Fonts: Inter (body) + JetBrains Mono (code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"> Ajit </a>
-					</header>
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ajit-zod" class="icon brands alt fa-linkedin"><span class="label">linkkedin</span></a></li>
-							<li><a href="https://github.com/AnalystAjit" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-elevated: #111111;
+      --border: #1f1f1f;
+      --border-hover: #2a2a2a;
+      --text: #ededed;
+      --text-muted: #a1a1a1;
+      --text-subtle: #6b6b6b;
+      --accent: #f97316; /* warm orange — distinct from Jayesh's site */
+      --accent-glow: rgba(249, 115, 22, 0.15);
+    }
 
-				<!-- Main -->
-					<div id="main">
+    * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+    code, .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql">Data Cleaning in SQL<br />
-									</a></h2>
-									<p>In this project we clean housing data in SQL Server Management Studio.</p>
-								</header>
-								<a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="image main"><img src="images/housing.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Data%20Cleaning%20Portfolio%20Project%20Queries.sql" class="button large">View Project</a></li>
-								</ul>
-							</article>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-feature-settings: 'ss01', 'cv11';
+    }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql">Data Exploration in SQL<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql" class="image fit"><img src="images/covid.jpg" alt="" /></a>
-									<p>Data Exploration of Covid 19 Dataset in SQL Server Management Studio.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://public.tableau.com/app/profile/patil2256">Tableau Projects<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/patil2256" class="image fit"><img src="images/tableau.png" alt="" /></a>
-									<p>This holds all of my Tableau Dashboards.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/patil2256" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnalystAjit/Power-BI-Projects">POWER BI PROJECTS<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnalystAjit/Power-BI-Projects" class="image fit"><img src="images/power-BI.jpg" alt="" /></a>
-									<p>This holds all of my Power BI Dashboards.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AnalystAjit/Power-BI-Projects" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Amazon%20Web%20Scrapper.ipynb">Amazon Web Scrapper
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Amazon%20Web%20Scrapper.ipynb" class="image fit"><img src="images/amazon.png" alt="" /></a>
-									<p>In this project we scrape data from Amazon to analyze price data for products.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Amazon%20Web%20Scrapper.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Movie%20Analysis%20Portfolio%20Project.ipynb">Movie Analysis Project<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/AnalystAjit/Portfolio-Project/blob/main/Movie%20Analysis%20Portfolio%20Project.ipynb" class="image fit"><img src="images/movies.png" alt="" /></a>
-									<p>Movie Analysis Project using different Python Libraries like pandas,numpy, seaborn,etc.</p>
-									<ul class="actions special">
-										<li><a href="" class="button">View Project</a></li>
-									</ul>
-								</article>
-								
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-					</div>
+    .card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .card:hover {
+      border-color: var(--border-hover);
+    }
 
-				<!-- Footer -->
+    .card-accent:hover {
+      border-color: var(--accent);
+    }
 
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									
-									<li><a href="https://www.linkedin.com/in/ajit-zod" class="icon brands alt fa-linkedin"><span class="label">linkkedin</span></a></li>
-									<li><a href="https://github.com/AnalystAjit" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    .nav-link {
+      color: var(--text-muted);
+      transition: color 0.15s ease;
+    }
+    .nav-link:hover { color: var(--text); }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    .btn-primary {
+      background: var(--accent);
+      color: #0a0a0a;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
 
-			</div>
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .btn-secondary:hover {
+      border-color: var(--text-muted);
+      background: var(--bg-elevated);
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .badge {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .badge:hover {
+      color: var(--text);
+      border-color: var(--border-hover);
+    }
 
-	</body>
+    .metric-number {
+      background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-pattern {
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+      background-size: 32px 32px;
+    }
+
+    /* Timeline */
+    .timeline-item {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 1px solid var(--border);
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 8px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--bg);
+    }
+
+    /* Scroll-triggered stagger */
+    .stagger > * {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .stagger.visible > * {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .stagger.visible > *:nth-child(1) { transition-delay: 0.05s; }
+    .stagger.visible > *:nth-child(2) { transition-delay: 0.1s; }
+    .stagger.visible > *:nth-child(3) { transition-delay: 0.15s; }
+    .stagger.visible > *:nth-child(4) { transition-delay: 0.2s; }
+    .stagger.visible > *:nth-child(5) { transition-delay: 0.25s; }
+    .stagger.visible > *:nth-child(6) { transition-delay: 0.3s; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- =============== NAV =============== -->
+  <nav class="sticky top-0 z-50 backdrop-blur-lg bg-black/50 border-b" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-medium">
+        <span class="w-8 h-8 rounded-md flex items-center justify-center" style="background: var(--accent); color: #0a0a0a;">AZ</span>
+        <span>Ajit Zod</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <a href="Ajit_Zod_Resume.pdf" target="_blank" class="btn-primary px-4 py-2 rounded-md text-sm inline-flex items-center gap-2">
+        <i data-lucide="download" class="w-4 h-4"></i>
+        Resume
+      </a>
+    </div>
+  </nav>
+
+  <!-- =============== HERO =============== -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 grid-pattern opacity-40"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-24 pb-32">
+      <div class="fade-in">
+        <div class="section-label mb-4">// data engineer · 3+ yoe</div>
+        <h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-none mb-6">
+          Building production<br>
+          <span class="gradient-text">data systems</span> that ship.
+        </h1>
+        <p class="text-lg md:text-xl max-w-2xl leading-relaxed mb-10" style="color: var(--text-muted);">
+          I design and build end-to-end data pipelines, warehouse infrastructure, and AI-driven data products on Databricks and AWS. Currently at BookMyShow, shipping systems that finance, payments, and product teams rely on every day.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#work" class="btn-primary px-6 py-3 rounded-md inline-flex items-center gap-2">
+            See my work
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact" class="btn-secondary px-6 py-3 rounded-md">
+            Get in touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick stats -->
+      <div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 stagger">
+        <div class="card p-5 rounded-xl">
+          <div class="metric-number text-3xl md:text-4xl">200+</div>
+          <div class="text-sm mt-1" style="color: var(--text-muted);">Jobs migrated</div>
+        </div>
+        <div class="card p-5 rounded-xl">
+          <div class="metric-number text-3xl md:text-4xl">1B+</div>
+          <div class="text-sm mt-1" style="color: var(--text-muted);">Events processed</div>
+        </div>
+        <div class="card p-5 rounded-xl">
+          <div class="metric-number text-3xl md:text-4xl">4</div>
+          <div class="text-sm mt-1" style="color: var(--text-muted);">Cloud certifications</div>
+        </div>
+        <div class="card p-5 rounded-xl">
+          <div class="metric-number text-3xl md:text-4xl">12–15</div>
+          <div class="text-sm mt-1" style="color: var(--text-muted);">PG source integrations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== ABOUT =============== -->
+  <section class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="section-label mb-4">// about</div>
+          <h2 class="text-3xl font-semibold">A little about me.</h2>
+        </div>
+        <div class="md:col-span-2 space-y-4 text-lg leading-relaxed" style="color: var(--text-muted);">
+          <p>
+            I'm a Data Engineer based in Mumbai with 3+ years of experience across product companies and enterprise consulting. My core stack is <span style="color: var(--text);">SQL, Python, PySpark, Databricks, and AWS</span> — and I've delivered work spanning payment reconciliation, AI-driven analytics, and large-scale data migrations.
+          </p>
+          <p>
+            Currently at <span style="color: var(--text);">BookMyShow</span>, where I've contributed to a full Redshift-to-Databricks warehouse decommissioning, authored a reusable migration framework that other engineering teams adopted, and built end-to-end systems for payment reconciliation and CX agent-quality analytics using Databricks AI Functions.
+          </p>
+          <p>
+            Previously at <span style="color: var(--text);">Tredence Analytics</span>, I worked on enterprise data platform builds for global consumer-goods, retail, and FMCG clients — designing dimensional models, building PySpark pipelines, and driving query optimization for large-scale analytical workloads.
+          </p>
+          <p>
+            I'm particularly interested in problems where data engineering meets AI — using LLMs to score, classify, and enrich data in production pipelines. I'm open to remote roles across product companies, startups, and modern data teams.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== EXPERIENCE =============== -->
+  <section id="work" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="section-label mb-4">// experience</div>
+      <h2 class="text-3xl font-semibold mb-16">Where I've built things.</h2>
+
+      <div class="space-y-16">
+
+        <!-- BookMyShow -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h3 class="text-2xl font-semibold">Data Engineer · <span style="color: var(--accent);">BookMyShow</span></h3>
+            <span class="mono text-sm" style="color: var(--text-subtle);">Aug 2025 — Present</span>
+          </div>
+          <p class="text-sm mb-6" style="color: var(--text-subtle);">Mumbai, India</p>
+          <ul class="space-y-3 text-base leading-relaxed" style="color: var(--text-muted);">
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Contributed to a full <span style="color: var(--text);">Redshift-to-Databricks warehouse decommissioning</span>, moving all production Spark analytics workloads onto the Databricks Lakehouse.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Re-pointed <span style="color: var(--text);">200+ AWS Glue, Lambda, and EMR jobs</span> to Delta tables and authored a reusable Glue/Lambda-to-Databricks migration framework adopted by multiple engineering teams.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Built an end-to-end payment-gateway reconciliation pipeline consolidating <span style="color: var(--text);">12–15 source systems</span> and reconciling tens of thousands of daily transactions against internal Databricks tables.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Shipped an end-to-end <span style="color: var(--text);">CX agent-quality analytics product</span> using PySpark Structured Streaming and Databricks AI Functions (ai_query) adopted by CX and Product leadership.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Executed a <span style="color: var(--text);">1B+ event CleverTap CDP migration</span> through a GCP Dataflow/Dataproc job, ensuring zero data loss and continuity of downstream analytics.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tredence -->
+        <div class="timeline-item">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+            <h3 class="text-2xl font-semibold">Data Engineer · <span style="color: var(--accent);">Tredence Analytics</span></h3>
+            <span class="mono text-sm" style="color: var(--text-subtle);">Jan 2023 — Aug 2025</span>
+          </div>
+          <p class="text-sm mb-6" style="color: var(--text-subtle);">Bengaluru, India</p>
+          <ul class="space-y-3 text-base leading-relaxed" style="color: var(--text-muted);">
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Worked on a legacy on-prem to AWS warehouse migration for a Retail QSR client, building PySpark ingestion jobs in a medallion architecture and helping automate <span style="color: var(--text);">90% of data onboarding</span>.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Contributed to a force-majeure detection and order-diversion pipeline for a global CPG client, fusing external API signals with internal order data via PySpark.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Reduced query execution time by <span style="color: var(--text);">60%</span> and lowered compute spend by optimizing PySpark transformations on Databricks with Delta Lake, partition pruning, and broadcast joins.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Designed <span style="color: var(--text);">20+ star-schema fact and dimension models</span> in Amazon Redshift, authoring stored procedures and views that became the source of truth for analytical reporting.</span>
+            </li>
+            <li class="flex gap-3">
+              <i data-lucide="chevron-right" class="w-4 h-4 mt-1 flex-shrink-0" style="color: var(--accent);"></i>
+              <span>Built ingestion pipelines on Azure for a global FMCG client using Data Factory, ADLS Gen2, and Azure Databricks.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FEATURED PROJECTS =============== -->
+  <section id="projects" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="section-label mb-4">// featured work</div>
+      <h2 class="text-3xl font-semibold mb-4">Selected projects.</h2>
+      <p class="text-lg mb-16 max-w-2xl" style="color: var(--text-muted);">
+        Deep dives into the systems I'm most proud of shipping. Each one solved a specific business problem and involved a non-trivial engineering decision.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 stagger">
+
+        <!-- Project 1: PG Reconciliation -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="credit-card" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <span class="mono text-xs px-2 py-1 rounded" style="background: var(--bg); color: var(--text-muted);">Production</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Payment-gateway reconciliation pipeline</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            End-to-end reconciliation system consolidating <span style="color: var(--text);">12–15 payment gateway sources</span> into S3 and matching tens of thousands of daily transactions against internal Databricks tables. Delivered with a Databricks App for the payments team to self-serve reconciliation status.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">PySpark</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Databricks</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">AWS S3</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Delta Lake</span>
+          </div>
+        </article>
+
+        <!-- Project 2: CX Agent AI -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="sparkles" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <span class="mono text-xs px-2 py-1 rounded" style="background: var(--bg); color: var(--text-muted);">AI-driven</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">CX agent-quality analytics product</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Real-time streaming product ingesting <span style="color: var(--text);">tens of thousands of support chats/day</span> from Kafka via PySpark Structured Streaming, scoring sentiment and resolution quality with <span style="color: var(--text);">Databricks AI Functions (ai_query)</span>. Now drives weekly coaching decisions across CX and Product.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Kafka</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Structured Streaming</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Databricks AI</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Streamlit</span>
+          </div>
+        </article>
+
+        <!-- Project 3: Migration Framework -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="git-branch" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <span class="mono text-xs px-2 py-1 rounded" style="background: var(--bg); color: var(--text-muted);">Framework</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Reusable migration framework</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Authored a templated Glue/Lambda-to-Databricks migration framework abstracting <span style="color: var(--text);">source-connection handling, Delta write patterns, and parity checks</span>. Adopted by multiple engineering teams to accelerate their own migrations across the platform.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Python</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">AWS Glue</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Delta Lake</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Framework Design</span>
+          </div>
+        </article>
+
+        <!-- Project 4: CDP Migration -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="database" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <span class="mono text-xs px-2 py-1 rounded" style="background: var(--bg); color: var(--text-muted);">Migration</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">1B+ event CDP migration</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Executed an end-to-end CleverTap account migration re-mapping all event definitions and backfilling <span style="color: var(--text);">1B+ historical events</span> through a GCP Dataflow/Dataproc job. Zero data loss, uninterrupted downstream analytics and marketing continuity.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">GCP Dataflow</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Dataproc</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">CleverTap</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Data Migration</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== SKILLS =============== -->
+  <section id="skills" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="section-label mb-4">// tech stack</div>
+      <h2 class="text-3xl font-semibold mb-16">Tools I work with.</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="code-2" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">Languages</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">SQL</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Python</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">PySpark</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Scala</span>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="zap" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">Big Data</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Apache Spark</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Databricks</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Delta Lake</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Unity Catalog</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Kafka</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Structured Streaming</span>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="cloud" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">Cloud</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">AWS S3</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">EMR</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Glue</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Lambda</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Redshift</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Athena</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Step Functions</span>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="database" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">Data Warehousing</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Amazon Redshift</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Databricks SQL</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Star Schema</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Dimensional Modelling</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Medallion Architecture</span>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="settings" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">DevOps & AI Tooling</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Git</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Docker</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">CI/CD</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">GitHub Copilot</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Cursor</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Claude Code</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">MCP</span>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i data-lucide="hard-drive" class="w-5 h-5" style="color: var(--accent);"></i>
+            <h3 class="font-semibold">Databases & BI</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-3 py-1.5 rounded-md text-sm">MySQL</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">PostgreSQL</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">MongoDB</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Power BI</span>
+            <span class="badge px-3 py-1.5 rounded-md text-sm">Streamlit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CERTIFICATIONS =============== -->
+  <section id="certifications" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="section-label mb-4">// credentials</div>
+      <h2 class="text-3xl font-semibold mb-16">Certifications.</h2>
+
+      <div class="grid md:grid-cols-2 gap-4 stagger">
+        <div class="card p-6 rounded-xl flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: var(--accent-glow);">
+            <i data-lucide="award" class="w-6 h-6" style="color: var(--accent);"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Databricks Certified Professional Data Engineer</h3>
+            <p class="text-sm" style="color: var(--text-muted);">Databricks · Highest tier</p>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: var(--accent-glow);">
+            <i data-lucide="award" class="w-6 h-6" style="color: var(--accent);"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Databricks Certified Data Engineer Associate</h3>
+            <p class="text-sm" style="color: var(--text-muted);">Databricks</p>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: var(--accent-glow);">
+            <i data-lucide="award" class="w-6 h-6" style="color: var(--accent);"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Google Cloud Professional Data Engineer</h3>
+            <p class="text-sm" style="color: var(--text-muted);">Google Cloud</p>
+          </div>
+        </div>
+
+        <div class="card p-6 rounded-xl flex items-start gap-4">
+          <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: var(--accent-glow);">
+            <i data-lucide="award" class="w-6 h-6" style="color: var(--accent);"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-1">Google Cloud Professional ML Engineer</h3>
+            <p class="text-sm" style="color: var(--text-muted);">Google Cloud</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CONTACT =============== -->
+  <section id="contact" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24 text-center">
+      <div class="section-label mb-4">// let's talk</div>
+      <h2 class="text-4xl md:text-5xl font-semibold mb-6">Have a data problem worth solving?</h2>
+      <p class="text-lg mb-12 max-w-2xl mx-auto" style="color: var(--text-muted);">
+        I'm currently exploring new roles — particularly remote positions with modern data teams, startups, and product companies building at scale.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <a href="mailto:zodajit@gmail.com" class="btn-primary px-6 py-3 rounded-md inline-flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          zodajit@gmail.com
+        </a>
+        <a href="Ajit_Zod_Resume.pdf" target="_blank" class="btn-secondary px-6 py-3 rounded-md inline-flex items-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          Download resume
+        </a>
+      </div>
+
+      <div class="flex justify-center gap-6" style="color: var(--text-muted);">
+        <a href="https://linkedin.com/in/ajitzod" target="_blank" class="nav-link inline-flex items-center gap-2 text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          LinkedIn
+        </a>
+        <a href="https://github.com/ajit4518" target="_blank" class="nav-link inline-flex items-center gap-2 text-sm">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          GitHub
+        </a>
+        <a href="https://leetcode.com/u/az4518" target="_blank" class="nav-link inline-flex items-center gap-2 text-sm">
+          <i data-lucide="code" class="w-4 h-4"></i>
+          LeetCode
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER =============== -->
+  <footer class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-wrap items-center justify-between gap-4">
+      <p class="text-sm" style="color: var(--text-subtle);">
+        © 2026 Ajit Zod. Built with care.
+      </p>
+      <p class="text-sm mono" style="color: var(--text-subtle);">
+        Mumbai, India · UTC+5:30
+      </p>
+    </div>
+  </footer>
+
+  <!-- =============== SCRIPTS =============== -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Scroll-triggered stagger animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.stagger').forEach(el => observer.observe(el));
+  </script>
+
+</body>
 </html>
