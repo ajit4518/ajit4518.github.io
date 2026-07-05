@@ -164,6 +164,7 @@
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#oss" class="nav-link">Open Source</a>
         <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
         <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -721,6 +722,114 @@
           </div>
         </article>
 
+        <!-- Azure Data Factory Pipeline -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="git-merge" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/azure-data-factory-pipeline" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Azure Data Factory incremental pipeline to Synapse</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Production-grade ADF pipeline using PolyBase-staged Copy Activity from ADLS Gen2 into Synapse Analytics. Incremental loads via watermark tracking stored procedures, <code class="mono">MERGE INTO</code> upserts in the transform layer, and a full Terraform IaC stack provisioning ADLS Gen2, Synapse workspace and SQL pool, ADF, managed identity RBAC, and a daily 02:00 UTC trigger.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Azure Data Factory</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Synapse Analytics</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">ADLS Gen2</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Terraform</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">PolyBase</span>
+          </div>
+        </article>
+
+        <!-- Marketing Analytics Pipeline -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="bar-chart" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/marketing-analytics-pipeline" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Cross-channel marketing analytics pipeline</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Unified marketing data pipeline pulling Google Ads API v17 (campaign + keyword performance) and Facebook Marketing API (ad account insights) in parallel Airflow tasks. A dbt mart unifies both channels into a single ROAS/CAC/CPM/CPC model with a 7-day rolling ROAS window — enabling apples-to-apples comparison across paid channels.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Google Ads API</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Facebook Ads API</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Airflow</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">dbt</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+          </div>
+        </article>
+
+        <!-- GA4 BigQuery Analytics -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="mouse-pointer-click" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/ga4-bigquery-analytics" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">GA4 → BigQuery analytics with funnel modeling</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            dbt project transforming raw GA4 BigQuery exports into session-grain and funnel analytics. Staging model UNNEST-s REPEATED STRUCT event_params and deduplicates; session mart classifies traffic into channel groups (paid_search / organic / social / email / referral / direct); funnel mart tracks view_item → add_to_cart → begin_checkout → purchase with per-stage drop-off rates.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">GA4</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">BigQuery</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">dbt</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Funnel Analysis</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Session Analytics</span>
+          </div>
+        </article>
+
+        <!-- Databricks Lakehouse Setup -->
+        <article class="card card-accent p-8 rounded-xl">
+          <div class="flex items-start justify-between mb-4">
+            <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background: var(--accent-glow);">
+              <i data-lucide="hexagon" class="w-6 h-6" style="color: var(--accent);"></i>
+            </div>
+            <a href="https://github.com/ajit4518/databricks-lakehouse-setup" target="_blank"
+               class="mono text-xs px-2 py-1 rounded inline-flex items-center gap-1.5 transition-colors"
+               style="background: var(--bg); color: var(--text-muted);"
+               onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-muted)'">
+              <i data-lucide="github" class="w-3 h-3"></i>
+              Open Source
+            </a>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Databricks medallion lakehouse with Unity Catalog</h3>
+          <p class="text-sm leading-relaxed mb-5" style="color: var(--text-muted);">
+            Reusable Databricks lakehouse template: Auto Loader (cloudFiles) with schema evolution for bronze ingestion, Delta MERGE INTO via foreachBatch for idempotent silver upserts, and gold aggregates (daily sales + customer LTV segments). Unity Catalog governs all three layers with a 3-level namespace. Full Terraform IaC provisions workspace, metastore, schemas, autoscaling cluster, and a 03:00 UTC workflow.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="badge px-2.5 py-1 rounded text-xs">Databricks</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Delta Lake</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Unity Catalog</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Auto Loader</span>
+            <span class="badge px-2.5 py-1 rounded text-xs">Terraform</span>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -944,12 +1053,190 @@
           </div>
         </a>
 
+        <a href="https://github.com/ajit4518/azure-data-factory-pipeline" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">azure-data-factory-pipeline</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            ADF PolyBase pipeline to Synapse with watermark-based incremental loads and full Terraform IaC for ADLS Gen2 + ADF + Synapse.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Azure</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Terraform</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Synapse</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/marketing-analytics-pipeline" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">marketing-analytics-pipeline</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Google Ads + Facebook Ads parallel Airflow pipeline → dbt mart with unified ROAS, CAC, CPM, and 7-day rolling averages.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Google Ads</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Airflow</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/ga4-bigquery-analytics" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">ga4-bigquery-analytics</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            dbt models over GA4 BigQuery export — session-grain channel attribution and e-commerce funnel with drop-off rates.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">GA4</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/ajit4518/databricks-lakehouse-setup" target="_blank" class="card card-accent p-6 rounded-xl block">
+          <div class="flex items-start justify-between mb-3">
+            <i data-lucide="github" class="w-5 h-5" style="color: var(--text-muted);"></i>
+            <i data-lucide="external-link" class="w-4 h-4" style="color: var(--text-subtle);"></i>
+          </div>
+          <h3 class="font-semibold mb-2">databricks-lakehouse-setup</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Medallion lakehouse template: Auto Loader bronze, Delta MERGE silver, gold aggregates, Unity Catalog governance, Terraform provisioned.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Databricks</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Delta Lake</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Terraform</span>
+          </div>
+        </a>
+
       </div>
 
       <div class="mt-8 text-center">
         <a href="https://github.com/ajit4518" target="_blank" class="btn-secondary px-6 py-3 rounded-md inline-flex items-center gap-2 text-sm">
           <i data-lucide="github" class="w-4 h-4"></i>
           View all repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="border-t" style="border-color: var(--border);">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <div class="section-label mb-4">// freelance services</div>
+      <h2 class="text-3xl font-semibold mb-4">What I can build for you.</h2>
+      <p class="text-lg mb-16 max-w-2xl" style="color: var(--text-muted);">
+        Available for contract and freelance engagements. I work async-first with clear deliverables and weekly check-ins.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="git-merge" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Azure Data Pipelines</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            End-to-end ADF pipelines from ADLS Gen2 to Synapse Analytics — incremental loads, MERGE upserts, PolyBase staging, watermark tracking, and Terraform IaC. From design to deployed and monitored.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">ADF</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Synapse</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Terraform</span>
+          </div>
+        </div>
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="hexagon" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Databricks Lakehouse Build</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Medallion architecture (Bronze → Silver → Gold) using Auto Loader, Delta MERGE, Unity Catalog, and Databricks Workflows — provisioned with Terraform. Reusable templates for new data domains.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Databricks</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Delta Lake</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Unity Catalog</span>
+          </div>
+        </div>
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="bar-chart" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Marketing Analytics Stack</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Unified Google Ads + Facebook Ads pipeline with dbt marts computing ROAS, CAC, CPM, and rolling attribution. Gives your marketing team one source of truth across paid channels.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Google Ads API</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+          </div>
+        </div>
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="mouse-pointer-click" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">GA4 Analytics Engineering</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Transform raw GA4 BigQuery exports into session-grain analytics and funnel models. Channel attribution, drop-off rates, and e-commerce conversion tracking — ready for BI tools.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">GA4</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">dbt</span>
+          </div>
+        </div>
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="shuffle" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">ETL / ELT Pipeline Development</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Custom ingestion from REST APIs, SFTP, Google Sheets, databases, and SaaS tools into BigQuery, Snowflake, or Redshift. Incremental loads, schema evolution, and data quality checks included.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Python</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Airflow</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">BigQuery</span>
+          </div>
+        </div>
+
+        <div class="card card-accent p-7 rounded-xl">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center mb-5" style="background: var(--accent-glow);">
+            <i data-lucide="database" class="w-5 h-5" style="color: var(--accent);"></i>
+          </div>
+          <h3 class="font-semibold text-lg mb-2">Data Warehouse Modernisation</h3>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-muted);">
+            Migrate legacy on-prem or first-gen cloud warehouses to modern platforms (BigQuery, Snowflake, Databricks). Schema mapping, pipeline re-pointing, parity validation, and cutover planning.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="badge px-2 py-0.5 rounded text-xs">Migration</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Snowflake</span>
+            <span class="badge px-2 py-0.5 rounded text-xs">Databricks</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 p-8 rounded-xl text-center" style="border: 1px solid var(--border); background: var(--bg-elevated);">
+        <p class="text-lg font-medium mb-2">Have a project in mind?</p>
+        <p class="text-sm mb-6" style="color: var(--text-muted);">I'm available for part-time contracts and fixed-scope projects. Typical engagement: 2–8 weeks.</p>
+        <a href="mailto:ajitzod20@gmail.com" class="btn-primary px-6 py-3 rounded-md inline-flex items-center gap-2 text-sm">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          Get in touch
         </a>
       </div>
     </div>
